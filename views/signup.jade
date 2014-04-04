@@ -1,0 +1,63 @@
+extends layout
+
+
+block content
+
+    //
+              Header section
+    header
+        .headr_inr
+            h1 Noamay.com
+            p
+                strong Call
+                | (123) 456890
+    .logosec
+        .logosec_inner
+            h1
+                img(src='images/logo.png')
+            p
+                a(href='#')
+                    img(src='images/twitr.png')
+                a(href='#')
+                    img(src='images/rss.png')
+    //
+      Header section end
+    //
+      body section
+    .mainbd
+        .mainbd_inr
+            .signupsec
+                h3.top Free Sign up
+                .middle-secsignup
+                    .middle-secsignup-left
+                        p
+                            a(href='#') Resend activation e-mail?
+                        .middle-secsignup-left-craetaccount
+                            .signup-creatacc-inner
+                                h2 Create your account
+                                form(action='', method='post')
+                                    input(name='', type='text', value='Desired Username', onfocus='if (this.value==this.defaultValue) this.value = \'\'', onblur='if (this.value==\'\') this.value = this.defaultValue')
+                                    input(name='', type='text', value='Your e-mail', onfocus='if (this.value==this.defaultValue) this.value = \'\'', onblur='if (this.value==\'\') this.value = this.defaultValue')
+                                    input(name='', type='text', value='Your e-mail. Once more', onfocus='if (this.value==this.defaultValue) this.value = \'\'', onblur='if (this.value==\'\') this.value = this.defaultValue')
+                                    div
+                                        input(name='', type='checkbox', value='')
+                                        label Receive our monthly newsletter
+                                    input(name='', type='submit', value='Create your free account')
+                                    p
+                                        | By signing in you agree to our
+                                        a(href='#') General
+                                        | and
+                                        a(href='#') Privacy Terms
+                    .middle-secsignup-right
+                        h2 Welcome to Noamay.com!
+                        p What you get:
+                        ul
+                            li Lorem ipsum dolor sit amet
+                            li Consectetur adipiscing elit
+                            li Nullam suscipit mi lacus in facilisis
+                            li Nisi ullamcorper non vestibulum
+                            li Suspendisse vel erat in lorem mattis
+                    br.clear
+                h3.bottom
+                    a(href='#') Close this window
+            br.clear

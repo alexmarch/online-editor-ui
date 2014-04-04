@@ -1,0 +1,52 @@
+extends layout
+block content
+    header
+      .headr_inr
+        h1 Noamay.com
+        p
+          strong Call
+          | (123) 456890
+    .logosec
+      .logosec_inner
+        h1
+          img(src='images/logo.png')
+        p
+          a(href='#')
+            img(src='images/twitr.png')
+          a(href='#')
+            img(src='images/rss.png')
+    //
+      Header section end
+    //
+      body section
+    .mainbd
+      .mainbd_inr
+        .bdy_left
+          .login-top
+            h2 Login
+            p Forgot your password
+          form#log_frm(action='', method='post')
+            label Email (required!)
+            input(name='', type='email', value='')
+            label Password (required!)
+            input(name='', type='password', value='')
+            input(name='', type='checkbox', value='')
+            p Remember me
+            input(name='', type='submit', value='Login!')
+            input(name='', type='button', value='Signup', onclick="window.location='/signup'")
+        .bdy_right
+          h2 Fusce sollicit lorem ipsum dolor
+          p Nullam volutpat risus sed ullamcorper tempor odio metus faucibus arcu
+          ul
+            li Maecenas sed nisl nec nisl convallis scelerisque.
+            li Etiam bibendum eros et blandit lacinia felis velit vulputa purus
+            li Phasellus euismod accumsan neque quis malesuada
+            li Suspendisse porttitor fermentum lobortisa mauris sed iaculis
+          .bdy_right-newnow
+            span New
+            strong Now with enhanced security
+          h4 Duis aliquam pretium velit lobortis sodales
+        br.clear
+    //
+      body section end
+
