@@ -7,9 +7,9 @@ var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
 var sessions = require('./routes/sessions').sessions;
+var db = require('./config/db').db;
 var http = require('http');
 var path = require('path');
-
 var app = express();
 
 // all environments
@@ -30,6 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+
+db.init();
 
 app.get('/', routes.index);
 app.get('/users', user.list);
