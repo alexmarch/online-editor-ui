@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "global.js",
+  "sourceRoot": "",
+  "sources": [
+    "global.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,cAAA;;AAAA,EAAA,MAAA,GAAS,OAAA,CAAQ,QAAR,CAAT,CAAA;;AAAA,EAEA,MAAA,GAAS;AAAA,IACL,MAAA,EAAQ,MAAM,CAAC,WAAP,CAAmB,GAAnB,CAAuB,CAAC,QAAxB,CAAiC,QAAjC,CADH;AAAA,IAEL,KAAA,EAAO,EAFF;AAAA,IAGL,MAAA,EAAQ,EAHH;GAFT,CAAA;;AAAA,EAQA,MAAM,CAAC,OAAP,GAAiB,MARjB,CAAA;AAAA"
+}
