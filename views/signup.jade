@@ -36,9 +36,10 @@ block content
                             .signup-creatacc-inner
                                 h2 Create your account
                                 form(action='', method='post')
-                                    input(name='', type='text', value='Desired Username', onfocus='if (this.value==this.defaultValue) this.value = \'\'', onblur='if (this.value==\'\') this.value = this.defaultValue')
-                                    input(name='', type='text', value='Your e-mail', onfocus='if (this.value==this.defaultValue) this.value = \'\'', onblur='if (this.value==\'\') this.value = this.defaultValue')
-                                    input(name='', type='text', value='Your e-mail. Once more', onfocus='if (this.value==this.defaultValue) this.value = \'\'', onblur='if (this.value==\'\') this.value = this.defaultValue')
+                                    input(name='name', type='text', value='Desired Username', onfocus='if (this.value==this.defaultValue) this.value = \'\'', onblur='if (this.value==\'\') this.value = this.defaultValue')
+                                    input(name='password', type='password', value='', placeholder="Enter password", onfocus='this.placeholder = \'\'', onblur='if (this.value==\'\') this.placeholder = "Enter password"')
+                                    input(name='email', type='text', value='Your e-mail', onfocus='if (this.value==this.defaultValue) this.value = \'\'', onblur='if (this.value==\'\') this.value = this.defaultValue')
+                                    input(name='email_confirm', type='text', value='Your e-mail. Once more', onfocus='if (this.value==this.defaultValue) this.value = \'\'', onblur='if (this.value==\'\') this.value = this.defaultValue')
                                     div
                                         input(name='', type='checkbox', value='')
                                         label Receive our monthly newsletter

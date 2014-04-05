@@ -312,7 +312,7 @@ footer.dashboard{background:#252525; clear:both;}
 .signup-creatacc-inner{background:#fff; border:1px solid #e2e0e0;}
 .signup-creatacc-inner form{padding:22px;}
 .signup-creatacc-inner h2{background:url(images/create-accout-head.png) 0 0 repeat-x; color:#e9eff2; font-family:'Open Sans', sans-serif; font-size:18px; font-weight:400; line-height:40px; padding-left:15px;}
-.signup-creatacc-inner input[type="text"]{
+.signup-creatacc-inner input[type="text"],input[type="password"]{
 	background:#fff; width:268px; height:32px; color:#949596; font-family:'Open Sans', sans-serif; font-size:13px; font-weight:400; line-height:32px; border:1px solid #b4b5b6;  border-radius: 3px; 
 	box-shadow:1px 1px 3px -1px  #888888 inset; padding-left:12px; margin-bottom:7px;
 }

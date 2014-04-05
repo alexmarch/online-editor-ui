@@ -5,7 +5,7 @@
 
 var express = require('express');
 var routes = require('./routes');
-var user = require('./routes/user');
+var user = require('./routes/user').user;
 var sessions = require('./routes/sessions').sessions;
 var db = require('./config/db').db;
 var http = require('http');
@@ -34,8 +34,8 @@ if ('development' == app.get('env')) {
 db.init();
 
 app.get('/', routes.index);
-app.get('/users', user.list);
 app.get('/signup', sessions.signup);
+app.post('/signup', user.create);
 app.get('/signin', sessions.signin);
 
 http.createServer(app).listen(app.get('port'), function(){
