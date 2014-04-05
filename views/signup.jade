@@ -35,6 +35,7 @@ block content
                         .middle-secsignup-left-craetaccount
                             .signup-creatacc-inner
                                 h2 Create your account
+                                p(style="padding:0px 22px; color:red")= errors
                                 form(action='', method='post')
                                     input(name='name', type='text', value='Desired Username', onfocus='if (this.value==this.defaultValue) this.value = \'\'', onblur='if (this.value==\'\') this.value = this.defaultValue')
                                     input(name='password', type='password', value='', placeholder="Enter password", onfocus='this.placeholder = \'\'', onblur='if (this.value==\'\') this.placeholder = "Enter password"')

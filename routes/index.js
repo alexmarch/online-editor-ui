@@ -1,8 +1,8 @@
-
-/*
- * GET home page.
- */
-
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+    if (req.session.user_id) {
+        res.render('dashboard',{auth:true});
+    }else{
+        res.render('signin');
+    }
+
 };

@@ -21,19 +21,21 @@ block content
       body section
     .mainbd
       .mainbd_inr
-        .bdy_left
-          .login-top
-            h2 Login
-            p Forgot your password
-          form#log_frm(action='', method='post')
-            label Email (required!)
-            input(name='', type='email', value='')
-            label Password (required!)
-            input(name='', type='password', value='')
-            input(name='', type='checkbox', value='')
-            p Remember me
-            input(name='', type='submit', value='Login!')
-            input(name='', type='button', value='Signup', onclick="window.location='/signup'")
+        unless auth
+            .bdy_left
+              .login-top
+                h2 Login
+                p Forgot your password
+              form#log_frm(action='/signin', method='post')
+                p(style="padding:0px 0px; color:red")= errors
+                label Email (required!)
+                input(name='email', type='email', value='')
+                label Password (required!)
+                input(name='password', type='password', value='')
+                input(name='', type='checkbox', value='')
+                p Remember me
+                input(name='', type='submit', value='Login!')
+                input(name='', type='button', value='Signup', onclick="window.location='/signup'")
         .bdy_right
           h2 Fusce sollicit lorem ipsum dolor
           p Nullam volutpat risus sed ullamcorper tempor odio metus faucibus arcu

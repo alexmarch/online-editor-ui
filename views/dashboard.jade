@@ -1,0 +1,144 @@
+//
+   Created by mas_bk on 4/5/14.
+extends layout
+block content
+     header.dashboard
+       .headr_inr_dash
+         img.inner-logo(src='/images/qlc-logo.png', alt='')
+         h1 Noamay.com
+         .inner-topright
+           p.datesec
+             span 10:00 am
+             | | 20th March, 2014
+           p.signoutsec
+             span.signoutlink
+               a(href='/logout') Sign Out
+             span.helplink
+               a(href='#') Help
+     //
+       Header section end
+     //
+       body section
+     .dashboard-fullwid
+       .dash-left-pan
+         ul
+           li.admini
+             a(href='#')
+               span Admin
+           li.enroli
+             a(href='#')
+               span Enroll
+           li.eventi
+             a(href='#')
+               span Events
+             ul
+               span.sltex Create New Workspace
+               p
+                 | Nulla sit amet leo semper, ased commodo arcu quis, ornare enim. Vivamus pretium sed dolor acen condimentum.
+               p.exp Explore
+               hr
+               li
+                 a(href='#') Demo Project 1
+               li
+                 a(href='#') Demo Project 2
+               li
+                 a(href='#') Demo Project 3
+                 ul
+                   li
+                     a(href='#') Nunc non libero purus
+                   li
+                     a(href='#') Quisque fringilla faucibus
+                   li
+                     a(href='#') Amet fermentum tellus
+               li
+                 a(href='#') Demo Project 4
+               li
+                 a(href='#') Demo Project 5
+               li
+                 a(href='#') Demo Project 6
+               li
+                 a(href='#') Demo Project 7
+           li.homei
+             a(href='#')
+               span Home
+           li.pointi
+             a(href='#')
+               span Point Sale
+           li.transformi
+             a(href='#')
+               span Transform
+       .dash-middle-pan
+         .avtt
+           img(src='/images/avater.png', width='70', height='69', alt='')
+           | Hello!
+           span.nam UserName
+           br
+           | Director,
+           br
+           | Mark Technology
+         br.clear
+         .contbox
+           h1
+             | Getting Started
+             span.qust
+               img(src='/images/qust.png', width='23', height='23', alt='')
+               .ttip Nulla sit amet leo semper, ased commodo arcu quis, ornare enim.
+           h2 Welcome to Noamay.com
+           p
+             | Nulla sit amet leo semper, ased commodo arcu quis, ornare enim. Vivamus pretium sed dolor acen condimentum. Nam vitae purus ipsum. Suspendisse egestas lorem fermentum, suscipit purus.
+           ul
+             li Suspendisse rhoncus placerat sem at hendrerit hasellus sed ultrices nibh.
+             li
+               | Morbi dolor felis, condimentum convallis odio ut, posuere vulputate tellus mattis diam justo.
+             li Lorem ipsum dolor sit amet consectetur adipiscing elit sapien vitae suscipit.
+         .contbox
+           h1
+             | Your Recent Activity
+             span.qust
+               img(src='/images/qust.png', width='23', height='23', alt='')
+               .ttip Nulla sit amet leo semper, ased commodo arcu quis, ornare enim.
+           h2 Recent Activities
+           p
+             | Nulla sit amet leo semper, ased commodo arcu quis, ornare enim. . Morbi non ligula odio. Nam vitae purus ipsum. Suspendisse egestas lorem fermentum, suscipit purus.
+           ul
+             li  Suspendisse rhoncus placerat sem at hendrerit hasellus sed ultrices nibh.
+             li
+               | Morbi dolor felis, condimentum convallis odio ut, posuere vulputate tellus mattis diam justo.
+             li Lorem ipsum dolor sit amet consectetur adipiscing elit sapien vitae suscipit.
+         .contbox
+           h1
+             | Your Add-On Services
+             span.qust
+               img(src='/images/qust.png', width='23', height='23', alt='')
+               .ttip Nulla sit amet leo semper, ased commodo arcu quis, ornare enim.
+           p
+             | Mivamus pretium sed dolor acen condimentum. Suspendisse ultricies orcimassa. Morbi non ligula odio. Nam vitae purus ipsum. Suspendisse egestas.
+           ul.add-serv
+             li
+               img(src='/images/catic.png', width='26', height='24', alt='')
+               | Activate
+             li
+               img(src='/images/mugicon.png', width='26', height='24', alt='')
+               | Activate
+           ul.add-serv.fright
+             li
+               img(src='/images/catic.png', width='26', height='24', alt='')
+               | Activate
+             li
+               img(src='/images/mugicon.png', width='26', height='24', alt='')
+               | Activate
+       .dash-right-pan
+         h2 Account Setting
+         ul
+           li
+             a(href='#') Change your password
+           li
+             a(href='#') Show your SSH key
+           li
+             a(href='#') pgrade to Premium
+           li
+             a(href='#') Delete your Account
+       br.clear
+     //
+       body section end
+
